@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}ActiveHub{% endblock %}</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a href="/" class="logo">
+                ActiveHub
+            </a>
+
+            <nav class="main-nav">
+                <a href="/">Home</a>
+                <a href="#">Activities</a>
+                <a href="#">Membership</a>
+                <a href="#">Classes</a>
+                <a href="#">Events</a>
+                <a href="#">Centres</a>
+            </nav>
+
+            <a href="#" class="nav-button">
+                Join Now
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <p>© 2026 ActiveHub</p>
+
+            <p>
+                Fitness · Swimming · Wellness · Activities
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

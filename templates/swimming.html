@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+
+{% block title %}
+ActiveHub | Swimming
+{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <p class="section-label">
+            SWIMMING
+        </p>
+
+        <h1>
+            Make a splash at ActiveHub.
+        </h1>
+
+        <p>
+            Enjoy swimming for fitness, recreation and
+            relaxation with facilities designed for
+            different ages and abilities.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="activity-detail">
+
+    <div class="container">
+
+        <div class="detail-grid">
+
+            <div>
+
+                <p class="section-label">
+                    SWIMMING AT ACTIVEHUB
+                </p>
+
+                <h2>
+                    Swimming for fitness and enjoyment
+                </h2>
+
+                <p>
+                    Whether you're swimming for exercise,
+                    improving your technique or enjoying
+                    time in the water, ActiveHub provides
+                    flexible aquatic options.
+                </p>
+
+                <p>
+                    Explore our pools, swimming programs
+                    and aquatic activities.
+                </p>
+
+                <a
+                    href="#"
+                    class="button primary-button">
+
+                    Explore Swimming
+
+                </a>
+
+            </div>
+
+
+            <div class="detail-box">
+
+                <h3>
+                    What's available?
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Indoor swimming pools
+                    </li>
+
+                    <li>
+                        Recreational swimming
+                    </li>
+
+                    <li>
+                        Lap swimming
+                    </li>
+
+                    <li>
+                        Water-based activities
+                    </li>
+
+                    <li>
+                        Swimming programs
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="final-cta">
+
+    <div class="container">
+
+        <div class="final-cta-content">
+
+            <p class="section-label">
+                READY TO GET STARTED?
+            </p>
+
+            <h2>
+                Find swimming activities near you.
+            </h2>
+
+            <p>
+                Choose your ActiveHub centre and discover
+                the aquatic activities available.
+            </p>
+
+            <a
+                href="{{ url_for('web.activities') }}"
+                class="button primary-button">
+
+                Explore Activities
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

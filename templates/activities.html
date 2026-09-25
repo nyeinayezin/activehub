@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+
+{% block title %}
+ActiveHub | Activities
+{% endblock %}
+
+{% block content %}
+
+<!-- PAGE HERO -->
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <p class="section-label">
+            EXPLORE ACTIVEHUB
+        </p>
+
+        <h1>
+            Find an activity that works for you.
+        </h1>
+
+        <p>
+            From fitness and swimming to children's programs
+            and group classes, discover activities for every
+            age and fitness level.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ACTIVITIES -->
+
+<section class="activities">
+
+    <div class="container">
+
+        <div class="activity-grid">
+
+            <!-- FITNESS -->
+
+            <article class="activity-card">
+
+                <div class="activity-icon">
+                    🏋️
+                </div>
+
+                <h2>
+                    Fitness
+                </h2>
+
+                <p>
+                    Build strength, improve your fitness and
+                    work towards your personal goals with access
+                    to modern gym facilities.
+                </p>
+
+                <a href="{{ url_for('web.fitness') }}">
+                    Explore Fitness →
+                </a>
+
+            </article>
+
+
+            <!-- SWIMMING -->
+
+            <article class="activity-card">
+
+                <div class="activity-icon">
+                    🏊
+                </div>
+
+                <h2>
+                    Swimming
+                </h2>
+
+                <p>
+                    Enjoy swimming for fitness, recreation
+                    and relaxation with facilities designed
+                    for different needs.
+                </p>
+
+                <a href="{{ url_for('web.swimming') }}">
+                    Explore Swimming →
+                </a>
+
+            </article>
+
+
+            <!-- SWIM SCHOOL -->
+
+            <article class="activity-card">
+
+                <div class="activity-icon">
+                    🧒
+                </div>
+
+                <h2>
+                    Swim School
+                </h2>
+
+                <p>
+                    Help children develop confidence and
+                    swimming skills through structured
+                    lessons and programs.
+                </p>
+
+                <a href="#">
+                    Find a Lesson →
+                </a>
+
+            </article>
+
+
+            <!-- GROUP CLASSES -->
+
+            <article class="activity-card">
+
+                <div class="activity-icon">
+                    🎯
+                </div>
+
+                <h2>
+                    Group Classes
+                </h2>
+
+                <p>
+                    Stay motivated with instructor-led
+                    classes including fitness, strength
+                    and wellbeing programs.
+                </p>
+
+                <a href="#">
+                    View Classes →
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="final-cta">
+
+    <div class="container">
+
+        <div class="final-cta-content">
+
+            <p class="section-label">
+                FIND YOUR NEXT ACTIVITY
+            </p>
+
+            <h2>
+                Not sure where to start?
+            </h2>
+
+            <p>
+                Find your nearest ActiveHub centre and
+                explore the activities available.
+            </p>
+
+            <a
+                href="{{ url_for('web.home') }}"
+                class="button primary-button">
+
+                Find a Centre
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

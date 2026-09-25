@@ -1,0 +1,420 @@
+{% extends "base.html" %}
+
+{% block title %}
+ActiveHub | Fitness, Swimming & Wellness
+{% endblock %}
+
+
+{% block content %}
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <p class="hero-label">
+                MOVE. FEEL. LIVE.
+            </p>
+
+            <h1>
+                Find your way to a more active life.
+            </h1>
+
+            <p class="hero-description">
+                From fitness and swimming to classes and activities,
+                ActiveHub makes it easy to find something that works
+                for you.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="{{ url_for('web.activities') }}" class="button primary-button">
+                    Explore Activities
+                </a>
+
+                <a href="#" class="button secondary-button">
+                    Join ActiveHub
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <div class="hero-image-placeholder">
+                ACTIVEHUB
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ACTIVITIES -->
+
+<section class="activities">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                EXPLORE ACTIVEHUB
+            </p>
+
+            <h2>
+                Something for everyone
+            </h2>
+
+            <p>
+                Choose from fitness, swimming and activities
+                designed for different goals and lifestyles.
+            </p>
+
+        </div>
+
+
+        <div class="activity-grid">
+
+            <article class="activity-card">
+
+                <div class="activity-icon">
+                    🏋️
+                </div>
+
+                <h3>
+                    Fitness
+                </h3>
+
+                <p>
+                    Modern facilities and equipment
+                    for every fitness level.
+                </p>
+
+                <a href="#">
+                    Explore Fitness →
+                </a>
+
+            </article>
+
+
+            <article class="activity-card">
+
+                <div class="activity-icon">
+                    🏊
+                </div>
+
+                <h3>
+                    Swimming
+                </h3>
+
+                <p>
+                    Aquatic facilities for fitness,
+                    recreation and relaxation.
+                </p>
+
+                <a href="#">
+                    Explore Swimming →
+                </a>
+
+            </article>
+
+
+            <article class="activity-card">
+
+                <div class="activity-icon">
+                    🧒
+                </div>
+
+                <h3>
+                    Swim School
+                </h3>
+
+                <p>
+                    Swimming programs for children
+                    of different ages and abilities.
+                </p>
+
+                <a href="#">
+                    Find a Lesson →
+                </a>
+
+            </article>
+
+
+            <article class="activity-card">
+
+                <div class="activity-icon">
+                    🎯
+                </div>
+
+                <h3>
+                    Group Classes
+                </h3>
+
+                <p>
+                    Stay motivated with classes
+                    led by experienced instructors.
+                </p>
+
+                <a href="#">
+                    View Classes →
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CENTRES -->
+
+<section class="centres">
+
+    <div class="container centre-container">
+
+        <div class="centre-content">
+
+            <p class="section-label">
+                FIND YOUR CENTRE
+            </p>
+
+            <h2>
+                Your local ActiveHub
+            </h2>
+
+            <p>
+                Find a centre near you and discover
+                the facilities and activities available.
+            </p>
+
+            <div class="centre-search">
+
+                <select id="centre">
+
+                    <option value="">
+                        Select a centre
+                    </option>
+
+                    <option value="brunswick">
+                        Brunswick
+                    </option>
+
+                    <option value="essendon">
+                        Essendon
+                    </option>
+
+                    <option value="preston">
+                        Preston
+                    </option>
+
+                </select>
+
+                <button
+                    type="button"
+                    class="button primary-button">
+
+                    Find Centre
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MEMBERSHIP -->
+
+<section class="membership">
+
+    <div class="container">
+
+        <div class="membership-content">
+
+            <div>
+
+                <p class="section-label">
+                    MEMBERSHIP
+                </p>
+
+                <h2>
+                    Make activity part of your everyday.
+                </h2>
+
+                <p>
+                    Flexible membership options designed
+                    around the way you live.
+                </p>
+
+            </div>
+
+            <a href="#" class="button primary-button">
+                View Memberships
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EVENTS -->
+
+<section class="events">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                WHAT'S ON
+            </p>
+
+            <h2>
+                Upcoming activities & events
+            </h2>
+
+        </div>
+
+
+        <div class="event-grid">
+
+            <article class="event-card">
+
+                <div class="event-date">
+                    <strong>28</strong>
+                    <span>SEP</span>
+                </div>
+
+                <div>
+
+                    <h3>
+                        Family Fitness Day
+                    </h3>
+
+                    <p>
+                        A fun day of activities for the whole family.
+                    </p>
+
+                    <a href="#">
+                        View Event →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="event-card">
+
+                <div class="event-date">
+                    <strong>04</strong>
+                    <span>OCT</span>
+                </div>
+
+                <div>
+
+                    <h3>
+                        Water Safety Workshop
+                    </h3>
+
+                    <p>
+                        Learn important water safety skills.
+                    </p>
+
+                    <a href="#">
+                        View Event →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="event-card">
+
+                <div class="event-date">
+                    <strong>12</strong>
+                    <span>OCT</span>
+                </div>
+
+                <div>
+
+                    <h3>
+                        Beginner Fitness Class
+                    </h3>
+
+                    <p>
+                        An introduction to group fitness.
+                    </p>
+
+                    <a href="#">
+                        View Event →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FINAL CTA -->
+
+<section class="final-cta">
+
+    <div class="container">
+
+        <div class="final-cta-content">
+
+            <p class="section-label">
+                YOUR NEXT STEP
+            </p>
+
+            <h2>
+                Ready to get active?
+            </h2>
+
+            <p>
+                Find an activity, explore a centre
+                or start your membership today.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#" class="button primary-button">
+                    Explore Activities
+                </a>
+
+                <a href="#" class="button secondary-button">
+                    Join Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
