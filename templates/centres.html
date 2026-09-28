@@ -1,0 +1,187 @@
+{% extends "base.html" %}
+
+{% block title %}
+ActiveHub | Centres
+{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <p class="section-label">
+            ACTIVEHUB CENTRES
+        </p>
+
+        <h1>
+            Find an ActiveHub centre near you.
+        </h1>
+
+        <p>
+            Explore our centres and discover the facilities,
+            activities and services available at each location.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="centres">
+    <div class="container">
+        
+        <div class="section-heading">
+
+            <p class="section-label">
+                OUR CENTRES
+            </p>
+
+            <h2>
+                Find a centre that works for you.
+            </h2>
+            <p>
+                Each ActiveHub centre offers a range of facilities
+                and activities. Explore the options available at
+                your preferred location.
+            </p>
+        </div>
+        <div class="centre-grid">
+            <article class="centre-card">
+            <div class="centre-image">
+                <img
+                    src="{{ url_for('static', filename='images/centre_north.png') }}"
+                    alt="ActiveHub North fitness centre"
+                >
+            </div>
+            <div class="centre-card-content">
+                <p class="centre-location">
+                    MELBOURNE NORTH
+                </p>
+                <h3>
+                    ActiveHub North
+                </h3>
+                <p>
+                    A modern fitness and aquatic centre
+                    offering gym facilities, swimming and
+                    group activities.
+                </p>
+                <ul>
+                    <li>Gym & Fitness</li>
+                    <li>Swimming Pool</li>
+                    <li>Group Classes</li>
+                    <li>Swim School</li>
+                </ul>
+
+                <a href="#" class="button primary-button">
+                    View Centre
+                </a>
+
+            </div>
+
+            </article>
+            <article class="centre-card">
+            <div class="centre-image">
+                <img
+                    src="{{ url_for('static', filename='images/centre_east.png') }}"
+                    alt="ActiveHub East fitness centre"
+                >
+
+            </div>
+
+            <div class="centre-card-content">
+                <p class="centre-location">
+                    MELBOURNE EAST
+                </p>
+                <h3>
+                    ActiveHub East
+                </h3>
+                <p>
+                    A community-focused centre with fitness,
+                    aquatic and wellbeing facilities.
+                </p>
+
+                <ul>
+                    <li>Gym & Fitness</li>
+                    <li>Swimming Pool</li>
+                    <li>Group Classes</li>
+                    <li>Wellbeing Programs</li>
+                </ul>
+
+                <a href="#" class="button primary-button">
+                    View Centre
+                </a>
+
+            </div>
+
+            </article>
+            <article class="centre-card">
+            <div class="centre-image">
+                <img
+                    src="{{ url_for('static', filename='images/centre_west.png') }}"
+                    alt="ActiveHub West fitness centre"
+                    >
+            </div>
+            <div class="centre-card-content">
+                <p class="centre-location">
+                    MELBOURNE WEST
+                </p>
+
+                <h3>
+                    ActiveHub West
+                </h3>
+
+                <p>
+                    A flexible recreation centre designed
+                    for individuals, families and community
+                    activities.
+                </p>
+
+                <ul>
+                    <li>Gym & Fitness</li>
+                    <li>Swimming Pool</li>
+                    <li>Family Activities</li>
+                    <li>Swim School</li>
+                </ul>
+
+                <a href="#" class="button primary-button">
+                    View Centre
+                </a>
+
+            </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+<section class="centre-benefits">
+
+    <div class="container">
+
+        <div class="centre-benefits-content">
+
+            <p class="section-label">
+                EXPLORE ACTIVEHUB
+            </p>
+
+            <h2>
+                One place for fitness, swimming and more.
+            </h2>
+
+            <p>
+                Explore the facilities and activities available
+                at your local ActiveHub centre and find options
+                that suit your lifestyle.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+{% include "includes/membership_cta.html" %}
+
+{% endblock %}

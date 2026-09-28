@@ -23,12 +23,12 @@
             </a>
 
             <nav class="main-nav">
-                <a href="/">Home</a>
-                <a href="#">Activities</a>
-                <a href="#">Membership</a>
-                <a href="#">Classes</a>
+                <a href="{{ url_for('web.home') }}">Home</a>
+                <a href="{{ url_for('web.activities') }}">Activities</a>
+                <a href="{{ url_for('web.membership') }}">Membership</a>
+                <a href="{{ url_for('web.group_classes') }}">Classes</a>
                 <a href="#">Events</a>
-                <a href="#">Centres</a>
+                <a href="{{ url_for('web.centres') }}">Centres</a>
             </nav>
 
             <a href="#" class="nav-button">

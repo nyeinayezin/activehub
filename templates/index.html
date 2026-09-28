@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-
 {% block title %}
 ActiveHub | Fitness, Swimming & Wellness
 {% endblock %}
@@ -47,128 +46,11 @@ ActiveHub | Fitness, Swimming & Wellness
         <div class="hero-image">
 
             <div class="hero-image-placeholder">
-                ACTIVEHUB
+                <img
+                    src="{{ url_for('static', filename='images/ActiveHub.png') }}"
+                    alt="ActiveHub North fitness centre"
+                >
             </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ACTIVITIES -->
-
-<section class="activities">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <p class="section-label">
-                EXPLORE ACTIVEHUB
-            </p>
-
-            <h2>
-                Something for everyone
-            </h2>
-
-            <p>
-                Choose from fitness, swimming and activities
-                designed for different goals and lifestyles.
-            </p>
-
-        </div>
-
-
-        <div class="activity-grid">
-
-            <article class="activity-card">
-
-                <div class="activity-icon">
-                    🏋️
-                </div>
-
-                <h3>
-                    Fitness
-                </h3>
-
-                <p>
-                    Modern facilities and equipment
-                    for every fitness level.
-                </p>
-
-                <a href="#">
-                    Explore Fitness →
-                </a>
-
-            </article>
-
-
-            <article class="activity-card">
-
-                <div class="activity-icon">
-                    🏊
-                </div>
-
-                <h3>
-                    Swimming
-                </h3>
-
-                <p>
-                    Aquatic facilities for fitness,
-                    recreation and relaxation.
-                </p>
-
-                <a href="#">
-                    Explore Swimming →
-                </a>
-
-            </article>
-
-
-            <article class="activity-card">
-
-                <div class="activity-icon">
-                    🧒
-                </div>
-
-                <h3>
-                    Swim School
-                </h3>
-
-                <p>
-                    Swimming programs for children
-                    of different ages and abilities.
-                </p>
-
-                <a href="#">
-                    Find a Lesson →
-                </a>
-
-            </article>
-
-
-            <article class="activity-card">
-
-                <div class="activity-icon">
-                    🎯
-                </div>
-
-                <h3>
-                    Group Classes
-                </h3>
-
-                <p>
-                    Stay motivated with classes
-                    led by experienced instructors.
-                </p>
-
-                <a href="#">
-                    View Classes →
-                </a>
-
-            </article>
 
         </div>
 
